@@ -1,0 +1,9 @@
+#login-container {
+  height: calc(100vh - 300px);
+  padding: 150px 0;
+}
+
+#login-container > div {
+  max-width: 400px;
+  margin: auto;
+}

@@ -1,0 +1,134 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body > div {
+  background-color: rgb(249, 249, 249);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* min-height: 200px; */
+}
+
+.grid-container {
+  display: grid;
+  padding: 0 20px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-container > div {
+  width: fit-content;
+}
+
+#header {
+  padding: 0 20px;
+  background-color: aliceblue;
+}
+
+#logout-btn {
+  height: fit-content;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#category-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 8px;
+}
+
+#category-list > li {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  column-gap: 10px;
+  padding-bottom: 4px;
+}
+
+.cat-flex {
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+
+#delete-all-btn {
+  float: inline-end;
+  width: 110px;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Table */
+#expenses {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#expenses td,
+#expenses th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#expenses tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#expenses tr:hover {
+  background-color: #ddd;
+}
+
+#expenses th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(104, 104, 104);
+  color: white;
+}
